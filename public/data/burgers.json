@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "name": "Wendy's Burger",
+      "description": "Juicy beef patty with cheddar cheese, lettuce, tomato, pickles, and house sauce on a toasted brioche bun.",
+      "price": 8.99,
+      "img": "Burger-Chesseburger.png",
+      "rating": 4.5,
+      "available": true,
+      "category": "CheeseBurgers"
+    },
+    {
+      "id": 2,
+      "name": "Veggie Burger",
+      "description": "Smoky BBQ sauce, crispy bacon, cheddar cheese, and onion rings on a toasted sesame bun.",
+      "price": 10.49,
+      "img": "Burger-Veggie.png",
+      "rating": 4.8,
+      "available": true,
+      "category": "Hamburgers"
+    },
+    {
+      "id": 3,
+      "name": "Chicken Burger",
+      "description": "Sautéed mushrooms, melted Swiss cheese, and garlic aioli on a toasted potato bun.",
+      "price": 9.99,
+      "img": "Burger-Chicken.png",
+      "rating": 4.6,
+      "available": false,
+      "category": "Hamburgers"
+    },
+    {
+      "id": 4,
+      "name": "Fried Chicken Burger",
+      "description": "Beef patty topped with pepper jack cheese, fresh jalapeños, spicy mayo, and lettuce.",
+      "price": 9.79,
+      "img": "Burger-Fried-Chicken.png",
+      "rating": 4.2,
+      "available": true,
+      "category": "Hamburgers"
+    }
+  ]
+
