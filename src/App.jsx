@@ -12,8 +12,8 @@ import HomePage from './pages/HomePage'
     <>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/Profile" element={<Profile />} />
-        <Route path='/Details' element={<Details />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path='/details/:id' element={<Details />} />
         <Route path="*" element={<h1>404 Not Found ☠️ </h1>} />
       </Routes>
     </>

@@ -1,28 +1,64 @@
-import { Search, SlidersHorizontal, Star } from "lucide-react";
+import { Search, SlidersHorizontal } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router";
+import BottomNav from "../components/nav-bar";
+import BurgerCard from "../components/BurgerCard";
 
 export default function HomePage() {
   const [burgers, setBurgers] = useState([]);
+  const [user, setUser] = useState("");
+  const [userImg, setUserImg] = useState("");
+
+  const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("/data/burgers.json")
-      .then((res) => res.json())
-      .then((data) => setBurgers(data));
+    const fetchBurgers = async () => {
+      try {
+        const res = await fetch("/data/burgers.json");
+        const data = await res.json();
+        setBurgers(data);
+      } catch (error) {
+        console.error("Failed to fetch burgers:", error);
+      }
+    };
+
+    fetchBurgers();
   }, []);
 
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const res2 = await fetch(`/data/mockProfile.json`);
+        const data2 = await res2.json();
+        setUserImg(data2[0].profileImg);
+        setUser(data2);
+      } catch (error) {
+        console.error("Failed find user, error");
+      }
+    };
+    fetchUser();
+  }, []);
+
+  const handleBurgerClick = (burger) => {
+    navigate(`/details/${burger.id}`);
+  };
+  const handleUserClick = (user) => {
+    navigate(`/profile`);
+  };
+
   return (
-    <>
+    <div className="page-wrapper">
       <header className="header-wrapper">
         <div className="header-text">
           <h1>Foodgo</h1>
           <p>Order your favourite food</p>
         </div>
-        <div className="profile-div">
+
+        <div onClick={handleUserClick} user={user} className="profile-div">
           <img
-            src="https://t4.ftcdn.net/jpg/05/59/91/77/360_F_559917754_dPi14NuRWEofju2XA0Jz07kSITgjYYJm.jpg"
+            src={`public/img/user/${userImg}`}
             id="profileImg"
             className="profile-img"
-            alt="Profile"
           />
         </div>
       </header>
@@ -37,25 +73,17 @@ export default function HomePage() {
             <SlidersHorizontal />
           </button>
         </div>
-
         <ul className="burgers-list">
           {burgers.map((burger) => (
-            <figure className="burger-card">
-                <div className="burger-card-img"><img src={`public/img/${burger.img}`} alt="" /></div>
-                <figcaption className="burger-card-text">
-                    <h3 className="burger-category">{burger.category}</h3>
-                    <h4 className="burger-title">{burger.name}</h4>
-                    <p className="burger-rating"><Star size={16} color="#FF9633"fill="#FF9633" /> {burger.rating}</p>
-                </figcaption>
-            </figure>
+            <BurgerCard
+              key={burger.id}
+              burger={burger}
+              onClick={handleBurgerClick}
+            />
           ))}
         </ul>
       </main>
-      <div className="nav-bar">
-            <ul>
-                <li></li>
-            </ul>
-        </div>
-    </>
+      <BottomNav />
+    </div>
   );
 }
