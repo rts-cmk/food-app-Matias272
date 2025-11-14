@@ -1,0 +1,43 @@
+/* CSS Imports */
+@import url("./homepage.css");
+@import url("./burgerDetails.css");
+@import url("./profile.css");
+@import url("./details.css");
+
+/* CSS Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Default Styling */
+:root  {
+    --reddish-color: #ef2a39;
+}
+* {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul {
+    list-style: none;
+}
+body {
+    display: flex;
+    justify-content: center;
+}
+.page-wrapper {
+    max-width: 500px;
+    width: 100%;
+    height: 100vh;
+}
+button {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* General Sytling */

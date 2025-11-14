@@ -1,0 +1,147 @@
+[
+  {
+    "id": 1,
+    "name": "Wendy's Burger",
+    "description": "The Cheeseburger Wendy's Burger is a classic fast food burger that packs a punch of flavor in every bite. Made with a juicy beef patty cooked to perfection, it's topped with melted American cheese, crispy lettuce, ripe tomato, and crunchy pickles..",
+    "price": 8.99,
+    "preparationTime": 26,
+    "img": "Burger-Chesseburger.png",
+    "rating": 4.5,
+    "spicyLvl": 50,
+    "available": true,
+    "category": "CheeseBurgers"
+  },
+  {
+    "id": 2,
+    "name": "Veggie Burger",
+    "description": "Smoky BBQ sauce, crispy bacon, cheddar cheese, and onion rings on a toasted sesame bun.",
+    "price": 10.49,
+    "preparationTime": 16,
+    "img": "Burger-Veggie.png",
+    "rating": 4.8,
+    "spicyLvl": 50,
+    "available": true,
+    "category": "Hamburgers"
+  },
+  {
+    "id": 3,
+    "name": "Chicken Burger",
+    "description": "Sautéed mushrooms, melted Swiss cheese, and garlic aioli on a toasted potato bun.",
+    "price": 9.99,
+    "preparationTime": 67,
+    "img": "Burger-Chicken.png",
+    "rating": 4.6,
+    "spicyLvl": 10,
+    "available": false,
+    "category": "Hamburgers"
+  },
+  {
+    "id": 4,
+    "name": "Fried Chicken Burger",
+    "description": "Beef patty topped with pepper jack cheese, fresh jalapeños, spicy mayo, and lettuce.",
+    "price": 9.79,
+    "preparationTime": 15,
+    "img": "Burger-Fried-Chicken.png",
+    "rating": 4.2,
+    "spicyLvl": 80,
+    "available": true,
+    "category": "Hamburgers"
+  },
+  {
+    "id": 5,
+    "name": "Bacon Melt Burger",
+    "description": "Juicy beef patty layered with melted cheddar, smoky bacon, and tangy house sauce on a soft brioche bun.",
+    "price": 9.99,
+    "preparationTime": 20,
+    "img": "Burger-Chesseburger.png",
+    "rating": 4.6,
+    "spicyLvl": 35,
+    "available": true,
+    "category": "CheeseBurgers"
+  },
+  {
+    "id": 6,
+    "name": "Crispy Ranch Chicken Burger",
+    "description": "Crispy chicken fillet with ranch mayo, lettuce, and melted Swiss cheese on a toasted potato bun.",
+    "price": 10.59,
+    "preparationTime": 18,
+    "img": "Burger-Chicken.png",
+    "rating": 4.4,
+    "spicyLvl": 25,
+    "available": true,
+    "category": "ChickenBurgers"
+  },
+  {
+    "id": 7,
+    "name": "BBQ Smokehouse Burger",
+    "description": "Grilled Angus beef topped with BBQ sauce, crispy onions, and cheddar cheese on a sesame bun.",
+    "price": 11.29,
+    "preparationTime": 24,
+    "img": "Burger-Veggie.png",
+    "rating": 4.7,
+    "spicyLvl": 45,
+    "available": true,
+    "category": "Hamburgers"
+  },
+  {
+    "id": 8,
+    "name": "Spicy Inferno Burger",
+    "description": "Beef patty with jalapeños, pepper jack cheese, chipotle mayo, and lettuce on a brioche bun.",
+    "price": 10.89,
+    "preparationTime": 19,
+    "img": "Burger-Fried-Chicken.png",
+    "rating": 4.3,
+    "spicyLvl": 90,
+    "available": true,
+    "category": "Hamburgers"
+  },
+  {
+    "id": 9,
+    "name": "Classic American Burger",
+    "description": "Simple and timeless — beef patty, American cheese, lettuce, tomato, onion, ketchup, and mustard.",
+    "price": 8.79,
+    "preparationTime": 17,
+    "img": "Burger-Chesseburger.png",
+    "rating": 4.2,
+    "spicyLvl": 5,
+    "available": true,
+    "category": "Hamburgers"
+  },
+  {
+    "id": 10,
+    "name": "Buffalo Crunch Chicken Burger",
+    "description": "Crispy chicken drenched in buffalo sauce with cool ranch, lettuce, and tomato on a sesame bun.",
+    "price": 10.19,
+    "preparationTime": 22,
+    "img": "Burger-Chicken.png",
+    "rating": 4.5,
+    "spicyLvl": 70,
+    "available": true,
+    "category": "ChickenBurgers"
+  },
+  {
+    "id": 11,
+    "name": "Mushroom Swiss Burger",
+    "description": "Grilled beef patty topped with sautéed mushrooms, melted Swiss, and garlic aioli on a toasted bun.",
+    "price": 11.49,
+    "preparationTime": 25,
+    "img": "Burger-Veggie.png",
+    "rating": 4.8,
+    "spicyLvl": 15,
+    "available": false,
+    "category": "Gourmet"
+  },
+  {
+    "id": 12,
+    "name": "Southern Fried Burger",
+    "description": "Crispy fried chicken, cheddar cheese, coleslaw, and honey mustard on a buttery bun.",
+    "price": 10.39,
+    "preparationTime": 21,
+    "img": "Burger-Fried-Chicken.png",
+    "rating": 4.4,
+    "spicyLvl": 40,
+    "available": true,
+    "category": "ChickenBurgers"
+  }
+]
+
